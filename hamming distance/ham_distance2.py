@@ -11,14 +11,8 @@ def hamming_distance(num1, num2):
     return count
 
 def hamming_weight(number):
-    count = 0
-    num_0 = ""
-    for _ in range(len(number)):
-        num_0+= "0"
-    for i in range(len(number)):
-        if number[i] != num_0[i]:
-            count+=1
-    return count
+    num_0 = "0" * len(number)
+    return hamming_distance(number, num_0)
 
 
 
