@@ -27,8 +27,8 @@ cur = conn.cursor()
 cur.execute(sql)
 
 sql_insert = """
-            INSERT INTO customer VALUES
-            (1,'John', 'Smith', 'john.smith@esmartdata.org')
+            INSERT INTO customer (first_name, last_name, email) VALUES
+            ('John', 'Smith', 'john.smith@esmartdata.org')
 """
 cur.execute(sql_insert)
 conn.commit()
