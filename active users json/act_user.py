@@ -6,12 +6,9 @@
 import json
 
 def filter_active_users():
-    users= []
     with open ("users.json", "r") as file:
         data = json.load(file)
-    for i in data:
-        if i["is_active"] == True:
-            users.append(i)
+    users = [user for user in data if user["is_active"]]
     with open('active_users.json', 'w') as file:
         json.dump(users, file, indent=2)
 
