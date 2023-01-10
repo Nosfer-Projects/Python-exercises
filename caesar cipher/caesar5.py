@@ -24,12 +24,19 @@ class CaesarCipher:
             if i not in self.alphabet:
                 result += i
             else:
-                new_letter = new_alpha[(self.alphabet.index(i) % len(self.alphabet))]
+                new_letter = new_alpha[(self.alphabet.index(i))]
                 result += new_letter
         return result
-    def decrypt(self, message):     
-        self.key = (-1) * self.key
-        return self.encrypt(message)
+    def decrypt(self, message): 
+        result = ''
+        for letter in message:
+            if letter not in self.alphabet:
+                result += letter
+            else:
+                result += self.alphabet[
+                    self.cipher.index(letter)
+                ]
+        return result
 
 msg = CaesarCipher(string.ascii_uppercase, 2)
 print(msg.decrypt('CVVCEM CV FCYP!'))
