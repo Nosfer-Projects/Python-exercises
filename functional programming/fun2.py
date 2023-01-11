@@ -12,10 +12,10 @@ def reduce_with_start(function, iterable, start):
             return None
         else:
             return start
-    result = start + iterable[0]
-    for item in iterable[1:]:
+    result = start
+    for item in iterable:
         result = function(result, item)
     return result
 
 
-print(reduce_with_start(lambda x, y: x + y, [], 100))
+print(reduce_with_start(lambda x, y: x + y, [1,2,3], 100))
