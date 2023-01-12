@@ -13,10 +13,7 @@ with open('cdr.csv', 'r') as file:
 
 
 def max_min_diff(data):
-    total_diff = []
-    for i in data:
-        diff = round(i[1]-i[2], 2)
-        total_diff.append(diff)
+    total_diff = [round((item[1]- item[2]),2) for item in data]
     return total_diff
 
 print(max_min_diff(data))
