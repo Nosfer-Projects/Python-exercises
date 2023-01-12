@@ -1,4 +1,6 @@
-
+# A fragment of a class called Matrix has been implemented, which will provide an interface for working with matrices.
+# Add a method called identity() to the Matrix class to return the identity matrix for square matrices. If the matrix is ​​not a square matrix, the method is expected to return None.
+# Reminder: The identity matrix on the main diagonal has all ones and the rest is filled with zeros
 
 
 class Matrix:
