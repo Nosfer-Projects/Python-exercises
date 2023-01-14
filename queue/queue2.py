@@ -25,4 +25,6 @@ class Queue:
             return True
         return False
     def first(self):
+        if self.is_empty():
+            raise IndexError('The queue is empty.')
         return self._data[0]
