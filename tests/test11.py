@@ -13,7 +13,9 @@
 # All you need to do is define the classes and the appropriate test methods. During the verification of the solution, the tests are run and in the event of any errors, the test report will be printed to the console.
 
 import unittest
- 
+import sys
+path= r'\\Python-exercises'
+sys.path.append(path)
  
 class TestStartswithMethod(unittest.TestCase):
  
