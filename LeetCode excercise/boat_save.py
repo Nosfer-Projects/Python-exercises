@@ -1,4 +1,4 @@
-#Show the number of boats needed to take all the people
+# #Show the number of boats needed to take all the people.
 
 
 def rescue_boats(people: list[int], limit: int) -> int:

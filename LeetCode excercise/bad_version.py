@@ -1,4 +1,4 @@
-#Find numbers of right versions
+#Find numbers of right versions.
 
 def right_ver(list_intput, bad_version):
     list_intput = [num for num in range(1,11)]
