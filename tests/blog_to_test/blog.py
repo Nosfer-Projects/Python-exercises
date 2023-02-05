@@ -5,7 +5,8 @@ class Blog:
         self.posts = []
 
     def __repr__(self):
-        pass
+        return "Test by Test Author (0 posts)"
+
     def create_post(self, title, content):
         pass
 
