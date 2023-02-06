@@ -1,4 +1,4 @@
-from tests.system.base_test import BaseTest
+from app.tests.system.base_test import BaseTest
 import json
 
 class TestHome(BaseTest):
