@@ -1,5 +1,6 @@
 from unittest import TestCase
 from app.app import app
+import json
 
 class TestHime(TestCase):
     def test_home(self):
@@ -7,3 +8,4 @@ class TestHime(TestCase):
             resp = c.get('/')
 
             self.assertEqual(resp.status_code, 200)
+            self.assertEqual(json.loads(resp.get_data()), {"message" : 'Hello, world!'})
