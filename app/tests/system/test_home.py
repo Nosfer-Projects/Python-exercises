@@ -1,5 +1,5 @@
 from unittest import TestCase
-from app import app
+from app.app import app
 
 class TestHime(TestCase):
     def test_home(self):
