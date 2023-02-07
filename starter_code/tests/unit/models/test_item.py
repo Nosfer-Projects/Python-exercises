@@ -12,5 +12,8 @@ class ItemTest(TestCase):
 
     def test_item_json(self):
         item = ItemModel("pc", 1500)
-
-        self.assertDictEqual({"name": "pc", "price" : 1500}, {"name" : item.name, "price": item.price})
+        expected = {
+            "name" : "pc",
+            "price": 1500,
+        }
+        self.assertEqual(item.json(), expected)
