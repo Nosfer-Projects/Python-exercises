@@ -1,5 +1,5 @@
-from starter_code.models.item import ItemModel
-from starter_code.tests.base_test import BaseTest
+from models.item import ItemModel
+from tests.base_test import BaseTest
 
 class ItemTest(BaseTest):
     def test_crud(self):

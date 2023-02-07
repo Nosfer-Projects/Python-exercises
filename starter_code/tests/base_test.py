@@ -1,6 +1,6 @@
 from unittest import TestCase
-from starter_code.app import app
-from starter_code.db import db
+from app import app
+from db import db
 
 class BaseTest(TestCase):
     def setUp(self):
