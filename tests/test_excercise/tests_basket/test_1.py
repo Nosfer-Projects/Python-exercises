@@ -5,7 +5,7 @@
 # test_size_of_basket_should_be_one() - checks if basket size is equal to 1
 # test_total_amount_should_have_tax() - checks if the total value of the cart is 3.63
 # test_getting_product() - checks if the product name with index 0 is 'milk' -> use the get_product() method for this
-# test_getting_product_out_of_range_should_raise_error() - checks if we get an IndexError when trying to read a product with index 1
+# test_getting_product_out_of_range_should_raise_error() - checks if we get an IndexError when trying to read a product with index 1 
 # All you need to do is define the class and the appropriate tests. During the verification of the solution, the tests are run and in the event of any errors, the test report will be printed to the console.
 
 
