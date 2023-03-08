@@ -1,5 +1,4 @@
 import json
-import sqlite3
 
 
 def test_get_method_on_site(get_url):
